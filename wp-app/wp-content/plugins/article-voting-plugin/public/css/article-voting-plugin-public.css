@@ -1,0 +1,43 @@
+ .avp-container label {
+    color: #1a1a1a;
+ }
+
+ .avp-container button {
+    display: inline-flex;
+    align-items: center;
+    border: solid #d7d8d8 1px;
+    color: #7b7b7b;
+    background: transparent;
+    padding: 0.5rem 0.7rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 500;
+ }
+
+ .avp-container button svg {
+    fill: #999a99;
+    padding: 0 0.5rem 0 0;
+ }
+ 
+ .avp-container button.voted {
+    border-color: #2a5efe;
+    border-width: 2px;
+ }
+
+ .avp-container button.voted svg {
+    fill: #2a5efe;
+ }
+
+ .avp-container button:hover {
+    border-color: #9b9b9b;
+    color: #1a1a1a;
+ }
+
+ .avp-container button:hover svg{
+    fill: #656666;
+ }
+
+ .avp-vote-buttons-label, .avp-vote-button {
+    text-transform: uppercase;
+ }
