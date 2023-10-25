@@ -1,4 +1,8 @@
- .avp-container label {
+.avp-vote-buttons-label, .avp-vote-button {
+    text-transform: uppercase;
+ }
+
+.avp-container label {
     color: #1a1a1a;
  }
 
@@ -22,7 +26,7 @@
  
  .avp-container button.voted {
     border-color: #2a5efe;
-    border-width: 2px;
+    border-width: ;
  }
 
  .avp-container button.voted svg {
@@ -36,8 +40,4 @@
 
  .avp-container button:hover svg{
     fill: #656666;
- }
-
- .avp-vote-buttons-label, .avp-vote-button {
-    text-transform: uppercase;
  }
