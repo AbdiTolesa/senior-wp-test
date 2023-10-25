@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Article Voting Plugin ===
 Contributors: @abditsori
 Requires at least: 3.0.1
 Tested up to: 6.4
