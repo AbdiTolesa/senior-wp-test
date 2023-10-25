@@ -1,4 +1,21 @@
 <?php
+/**
+ * The file that defines the class that contains core voting functions.
+ *
+ * @since      1.0.0
+ *
+ * @package    Article_Voting_Plugin
+ * @subpackage Article_Voting_Plugin/includes
+ */
+
+/**
+ * This class defines functions used to cast a vote on behalf of a user and other helper functions.
+ *
+ * @since      1.0.0
+ * @package    Article_Voting_Plugin
+ * @subpackage Article_Voting_Plugin/includes
+ * @author     Abdi Tolessa <tolesaabdi@gmail.com>
+ */
 class Article_Voting_Plugin_Core {
 
 	/**

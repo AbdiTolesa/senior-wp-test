@@ -1,5 +1,7 @@
 <div class="avp-container">
-	<label id="avp-vote-buttons-label" class="avp-vote-buttons-label"><?php echo ! empty( $user_vote ) ? esc_html__( 'Thank you for your feedback.','article-voting-plugin' ) : esc_html__( 'Was this article helpful?','article-voting-plugin' ); ?></label>
+	<label id="avp-vote-buttons-label" class="avp-vote-buttons-label">
+		<?php echo ! empty( $user_vote ) ? esc_html__( 'Thank you for your feedback.','article-voting-plugin' ) : esc_html__( 'Was this article helpful?','article-voting-plugin' ); ?>
+	</label>
 	<button
 		aria-describedby="avp-vote-buttons-label"
 		id="avp-yes-vote-btn"
