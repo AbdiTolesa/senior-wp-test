@@ -101,10 +101,11 @@ class Article_Voting_Plugin_Public {
 		if ( is_user_logged_in() ) {
 			wp_localize_script(
 				$this->plugin_name,
-				'ajax_object',
+				'ajaxObject',
 				array(
-					'ajax_url' => admin_url('admin-ajax.php'),
-					'post_id'  => get_the_ID(),
+					'ajax_url'   => admin_url( 'admin-ajax.php' ),
+					'post_id'    => get_the_ID(),
+					'ajax_nonce' => wp_create_nonce( 'avp_create_vote' ),
 				)
 			);
 		}

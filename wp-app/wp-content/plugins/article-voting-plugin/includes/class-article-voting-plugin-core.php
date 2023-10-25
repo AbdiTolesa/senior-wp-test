@@ -2,7 +2,7 @@
 class Article_Voting_Plugin_Core {
 
 	/**
-	 * Returns The vote value for the current user on the current article or false if the user has not voted for it yet.
+	 * Returns the vote value for the current user on the current post or false if the user has not voted for it yet.
 	 * 
 	 * @since 1.0.0
 	 * @return string|bool
@@ -59,6 +59,8 @@ class Article_Voting_Plugin_Core {
 	 * @return void
 	 */
 	public function vote_article() {
+		check_ajax_referer( 'avp_create_vote', 'nonce' );
+
 		$user_id = get_current_user_id();
 		if ( empty( $_POST['vote'] ) || empty( $_POST['post_id'] ) || ! $user_id ) {
 			return;
@@ -82,7 +84,7 @@ class Article_Voting_Plugin_Core {
 		$response = array(
 			'yes' => $positive_votes,
 			'no'  => round( 100 - $positive_votes, 2 ),
-			'message' => __( 'Thank you for your feedback', 'article-voting-plugin' ),
+			'message' => __( 'Thank you for your feedback.', 'article-voting-plugin' ),
 		);
 
 		wp_send_json( $response );

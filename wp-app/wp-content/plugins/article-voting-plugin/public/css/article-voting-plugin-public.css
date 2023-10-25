@@ -2,11 +2,15 @@
     text-transform: uppercase;
  }
 
-.avp-container label {
+.avp-container label, .avp-container .avp-vote-button:hover {
     color: #1a1a1a;
  }
 
- .avp-container button {
+ .avp-vote-buttons-label {
+   font-size: 0.85rem;
+ }
+
+ .avp-container .avp-vote-button {
     display: inline-flex;
     align-items: center;
     border: solid #d7d8d8 1px;
@@ -15,29 +19,32 @@
     padding: 0.5rem 0.7rem;
     margin: 0 0.5rem;
     border-radius: 5px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 500;
  }
 
- .avp-container button svg {
+ .avp-container .avp-vote-button:not(.avp-vote-trigger):not(.voted) {
+   border: none;
+ }
+
+ .avp-container .avp-vote-button svg {
     fill: #999a99;
     padding: 0 0.5rem 0 0;
  }
  
- .avp-container button.voted {
+ .avp-container .avp-vote-button.voted {
     border-color: #2a5efe;
-    border-width: ;
+    border-width: 2px;
  }
 
- .avp-container button.voted svg {
+ .avp-container .avp-vote-button.voted svg {
     fill: #2a5efe;
  }
 
- .avp-container button:hover {
+ .avp-container .avp-vote-button:hover {
     border-color: #9b9b9b;
-    color: #1a1a1a;
  }
 
- .avp-container button:hover svg{
+ .avp-container .avp-vote-button:hover svg{
     fill: #656666;
  }

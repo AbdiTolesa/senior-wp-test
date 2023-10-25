@@ -120,8 +120,8 @@ class Article_Voting_Plugin_Admin {
 		$total_votes    = count( $post_votes['yes'] ) + count( $post_votes['no'] );
 		$positive_votes = round( ( count( $post_votes['yes'] ) / $total_votes ) * 100, 2 );
 		$negative_votes = round( 100 - $positive_votes, 2 );
-		echo esc_html( sprintf( 'Total votes: %d ', $total_votes ));
-		echo esc_html( sprintf( 'Positive votes: %.2f%% ', $positive_votes ));
+		echo esc_html( sprintf( 'Total votes: %d, ', $total_votes ));
+		echo esc_html( sprintf( 'Positive votes: %.2f%%, ', $positive_votes ));
 		echo esc_html( sprintf( 'Negative votes: %.2f%%', $negative_votes ));
 	}
 }
