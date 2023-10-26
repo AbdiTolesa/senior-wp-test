@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name:       Article Voting Plugin
  * Plugin URI:        https://article-voting-plugin.com
