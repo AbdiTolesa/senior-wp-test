@@ -55,7 +55,7 @@ class Article_Voting_Plugin_Core {
 		}
 		$user_vote = $this->user_vote_value();
 
-		if ( ! empty( $user_vote )) {
+		if ( ! empty( $user_vote ) ) {
 			$post_votes     = get_post_meta( get_the_ID(), 'avp_votes', true );
 			$total_votes    = count( $post_votes['yes'] ) + count( $post_votes['no'] );
 			$positive_votes = round( ( count( $post_votes['yes'] ) / $total_votes ) * 100, 2 );
